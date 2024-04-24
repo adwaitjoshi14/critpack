@@ -29,5 +29,5 @@ def molarvol(path, compound, X):
     
     i = R*T/(P*1e6)
     sol = fsolve(obj, i)
-    Vm = sol[0]*1e6
-    return (f'The molar volume is {Vm:1.3f} cc/mol')
+    Vm = sol[0]*1e3
+    return (f'The molar volume is {Vm:1.3f} L/mol')
